@@ -1,9 +1,15 @@
 import "./assets/css/app.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import HomePage from "pages/HomePage";
+import Details from "pages/Details";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-xl ">halo</h1>
+      <Router>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/categories/:idc" component={Details} />
+      </Router>
     </div>
   );
 }
