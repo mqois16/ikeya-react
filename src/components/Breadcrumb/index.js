@@ -18,15 +18,6 @@ function Breadcrumb({ list }) {
               </li>
             );
           })}
-
-          <li>
-            <Link to="/">Office Room</Link>
-          </li>
-          <li>
-            <Link to="/" aria-label="current-page">
-              Details
-            </Link>
-          </li>
         </ul>
       </div>
     </section>

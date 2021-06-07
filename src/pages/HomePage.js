@@ -10,7 +10,7 @@ import Footer from "parts/Footer";
 function HomePage() {
   return (
     <>
-      <Header></Header>
+      <Header theme="white" position="absolute"></Header>
       <Hero />
       <BrowseRoom />
       <JustArrived />

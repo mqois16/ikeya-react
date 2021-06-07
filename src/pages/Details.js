@@ -2,15 +2,16 @@ import React from "react";
 import Header from "parts/Header";
 import Breadcrumb from "components/Breadcrumb";
 // import BrowseRoom from "parts/HomePages/BrowseRoom";
-// import JustArrived from "parts/HomePages/JustArrived";
+import ProductDetails from "parts/Details/ProductDetails";
+import Suggestion from "parts/Details/Suggestion";
 import SiteMap from "parts/SiteMap";
-import Clients from "parts/Clients";
+// import Clients from "parts/Clients";
 import Footer from "parts/Footer";
 
 function Details() {
   return (
     <>
-      <Header></Header>
+      <Header theme="black" />
       <Breadcrumb
         list={[
           { url: "/", name: "Home" },
@@ -18,7 +19,9 @@ function Details() {
           { url: "/categories/91231/products/7888", name: "Details" },
         ]}
       />
-      <Clients />
+      <ProductDetails />
+      <Suggestion />
+      {/* <Clients /> */}
       <SiteMap />
       <Footer />
     </>
